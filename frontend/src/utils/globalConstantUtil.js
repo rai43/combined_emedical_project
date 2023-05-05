@@ -1,0 +1,106 @@
+export const GLOBAL_CONSTANTS = Object.freeze({
+	MODAL_BODY_TYPES: {
+		BENEFICIARY_NEW: 'BENEFICIARY_NEW',
+		USER_NEW: 'USER_NEW',
+		CONSTANTS_NEW: 'CONSTANTS_NEW',
+		CONSULTATIONS_NEW: 'CONSULTATIONS_NEW',
+		CONSULTATIONS_DONE_DETAILS: 'CONSULTATIONS_DONE_DETAILS',
+		EXAMS_NEW: 'EXAMS_NEW',
+		INTERNAL_PRESCRIPTIONS_NEW: 'INTERNAL_PRESCRIPTIONS_NEW',
+		MEDICATION_NEW: 'MEDICATION_NEW',
+		MEDICAL_ACT_NEW: 'MEDICAL_ACT_NEW',
+		DEFAULT: '',
+	},
+	RIGHT_SIDE_DRAWER: {
+		BENEFICIARY_INFO: 'BENEFICIARY_INFO',
+		BENEFICIARY_HISTORY: 'BENEFICIARY_HISTORY',
+		BENEFICIARY_CARD: 'BENEFICIARY_CARD',
+		EXAMENS_NEW: 'EXAMENS_NEW',
+		MEDICAL_CERTIFICAT_NEW: 'MEDICAL_CERTIFICAT_NEW',
+		INTERNAL_PRESCRIPTION_NEW: 'INTERNAL_PRESCRIPTION_NEW',
+		EXTERNAL_PRESCRIPTION_NEW: 'EXTERNAL_PRESCRIPTION_NEW',
+		MEDICAL_ACT_NEW: 'MEDICAL_ACT_NEW',
+		DEFAULT: '',
+	},
+	OPTIONS: {
+		GENDER_OPTIONS: [
+			{ name: 'MASCULIN', value: 'MASCULINE' },
+			{ name: 'FEMININ', value: 'FEMININE' },
+			{ name: 'UNDEFINED', value: 'UNDEFINED' },
+		],
+		CONTRACT_TYPE_OPTIONS: [
+			{ name: 'DURÉE DETERMINÉE', value: 'CDD' },
+			{ name: 'DURÉE INDETERMINÉE', value: 'CDI' },
+			{ name: 'STAGE', value: 'INTERNSHIP' },
+		],
+		BLOOD_GROUP_OPTIONS: [
+			{ name: 'O+', value: 'O POSITIF' },
+			{ name: 'O-', value: 'O NÉGATIF' },
+			{ name: 'A+', value: 'A POSITIF' },
+			{ name: 'A-', value: 'A NÉGATIF' },
+			{ name: 'B+', value: 'B POSITIF' },
+			{ name: 'B-', value: 'B NÉGATIF' },
+			{ name: 'AB+', value: 'AB POSITIF' },
+			{ name: 'AB-', value: 'AB NÉGATIF' },
+		],
+		AGENT_TYPE_OPTIONS: [
+			{ name: 'AGENT', value: 'AGENT' },
+			{ name: 'CONJOINT', value: 'CONJOINT' },
+			{ name: 'ENFANT', value: 'ENFANT' },
+		],
+		EXAM_TYPE_OPTIONS: [
+			{ name: 'INTERNE', value: 'INTERNAL' },
+			{ name: 'EXTERNE', value: 'EXTERNAL' },
+		],
+		EXTERNAL_PRESCRIPTIONS_TYPE_OPTIONS: [
+			{ name: 'BON', value: 'BON' },
+			{ name: 'AUTRE', value: 'AUTRE' },
+		],
+		ACTES_MEDICAUX: [
+			{ name: 'PERFUSIONS', value: 'PERFUSIONS' },
+			{ name: 'INJECTIONS', value: 'INJECTIONS' },
+			{ name: 'PANSEMENTS', value: 'PANSEMENTS' },
+			{ name: 'LAVAGE_DES_OREILLES', value: 'LAVAGE_DES_OREILLES' },
+			{ name: 'AEROSOL', value: 'AEROSOL' },
+			{ name: 'AUTRES', value: 'AUTRES' },
+		],
+		PROFIL_TYPE_OPTIONS: [
+			{ name: 'MEDECIN', value: 'MEDECIN' },
+			{
+				name: 'MANAGER DE SECTION ASSURANCE MALADIE',
+				value: 'MANAGER_DE_SECTION_ASSURANCE_MALADIE',
+			},
+			{ name: 'GESTIONNAIRE', value: 'GESTIONNAIRE' },
+			{ name: 'AIDE SOIGNANT(E)', value: 'AIDE_SOIGNANT_E' },
+			{ name: 'INFIRMIER(E)', value: 'INFIRMIER_E' },
+			{ name: 'TECHNICIEN DE LABORATOIRE', value: 'TECHNICIEN_DE_LABORATOIRE' },
+		],
+	},
+	AG_GRID_DEFAULT_COL_DEF: {
+		resizable: true,
+		sortable: true,
+		filter: true,
+	},
+	PERIODS: {
+		LAST_MONTH: 'MOIS DERNIER',
+		LAST_THREE_MONTHS: 'TROIS DERNIERS MOIS',
+		LAST_SIX_MONTHS: 'SIX DERNIERS MOIS',
+		LAST_YEAR: "L'ANNÉE DERNIÈRE",
+		LAST_TWO_YEAR: "IL Y'A DEUX ANS",
+	},
+});
+
+export const FILTERS_CONSTANTS = Object.freeze({
+	FILTERS: [
+		{
+			LABEL: 'PERIODE',
+			FILTERS: [
+				GLOBAL_CONSTANTS.PERIODS.LAST_MONTH,
+				GLOBAL_CONSTANTS.PERIODS.LAST_THREE_MONTHS,
+				GLOBAL_CONSTANTS.PERIODS.LAST_SIX_MONTHS,
+				GLOBAL_CONSTANTS.PERIODS.LAST_YEAR,
+				GLOBAL_CONSTANTS.PERIODS.LAST_TWO_YEAR,
+			],
+		},
+	],
+});
